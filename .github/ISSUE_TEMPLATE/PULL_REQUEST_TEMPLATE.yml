@@ -1,0 +1,39 @@
+name: 💡 Pull Request Template
+description: PR 생성 시 사용할 템플릿입니다.
+title: "[PR] "
+body:
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: "#️⃣ 연관된 이슈"
+      description: "ex) #1, #2 와 같이 연관된 이슈 번호를 적어주세요."
+      placeholder: "#1, #2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: work-description
+    attributes:
+      label: "📝 작업 내용"
+      description: "이번 PR에서 작업한 내용을 간략히 설명해주세요. 이미지 첨부도 가능합니다."
+      placeholder: "무엇을, 왜, 어떻게 변경했는지를 간단히 적어주세요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "🖼️ 스크린샷 (선택)"
+      description: "UI 관련 변경이 있다면 스크린샷을 첨부해주세요."
+      placeholder: "스크린샷을 여기에 드래그하거나 복사/붙여넣기 하세요."
+    validations:
+      required: false
+
+  - type: textarea
+    id: review-request
+    attributes:
+      label: "💬 리뷰 요구사항 (선택)"
+      description: "리뷰어가 특별히 봐줬으면 하는 부분이 있다면 적어주세요."
+      placeholder: "예) 메서드 XXX의 이름을 더 잘 짓고 싶은데 혹시 좋은 명칭이 있을까요?"
+    validations:
+      required: false
