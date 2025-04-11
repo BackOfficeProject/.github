@@ -21,6 +21,17 @@ body:
       required: true
 
   - type: textarea
+    id: todo
+    attributes:
+      label: 👍 오늘 작업
+      description: 오늘 하루 작업 내역을 자유롭게 작성해주세요.
+      placeholder: |
+        - 백엔드 서버 구축
+        - 백엔드 인프라 설정
+    validations:
+      required: true
+
+  - type: textarea
     id: result
     attributes:
       label: 🧭 회의 결과
